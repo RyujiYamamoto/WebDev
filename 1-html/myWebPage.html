@@ -4,6 +4,140 @@
         <title>My Webpage</title>
     </head>
     <body>
-        My first Webpage!
+        <p id="top">これは1つ目の段落です。:pタグ</p>
+        
+        <p>これは2つ目の段落です。:pタグ</p>
+        
+        <p>これは3つ目の段落です。<br>
+            :brタグ:ここに改行を入れます。</p>
+        
+        <p>これは文字を<b>太字:bタグ</b>で表示するタグです。<br>
+        これは文字を<strong>太字:strongタグ</strong>で表示するタグです。</p>
+        
+        <p>ここでは文字を<i>イタリック:iタグ</i>で表示します。<br>
+        ここでは文字を<em>イタリック:emタグ</em>で表示します。</p>
+        
+        <p>次は<u>下線:uタグ</u>を引きます。<br>
+            次は<ins>下線:insタグ</ins>を引きます。</p>
+        
+        <p>例えば、これは<sup>上付き文字:supタグ</sup><sub>下付き文字:subタグ</sub>の例です。</p>
+        <p>例えば、これは<sub>下付き文字:subタグ</sub>の例です。</p>
+        
+        <p>これは<del>無効なタグ:delタグ</del>です。</p>
+        
+        <hr>:hrタグ…Horizontal Rule
+        
+        <hr>
+        <h3>番号なしリスト</h3>
+            <ul>出荷可能な野菜の一覧
+                <li><mark>ハヤトウリ</mark></li>
+                <li><del>坊ちゃんかぼちゃ</del></li>
+                <li><strong>小松菜</strong></li>                        
+                <li><ins>スターフルーツ</ins></li>
+            </ul>
+
+        <hr>
+        <h3>番号ありリスト</h3>
+            <ol start="10" type="i" reversed type="a">
+                <li><mark>ハヤトウリ</mark></li>
+                <li><del>坊ちゃんかぼちゃ</del></li>
+                <li><strong>小松菜</strong></li>
+                <li><ins>スターフルーツ</ins></li>
+                <li></li>
+            </ol>
+            type属性は左の指定が優先されるようだ。
+
+        <hr>
+        <h3>イメージ</h3>
+            <p><img src="homer.png" width="100" height=""><br>Homer Simpson</p>
+            <p><img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png" width="100" height=""><br>Marge Simpson</p>
+        
+            <img src="homer.png" width="100" height="">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png" width="100" height="">
+        
+        <hr>
+        <h3 id="form">フォーム</h3>
+            <form method="post">
+                <p>ユーザ名:<input type="text" placeholder="yamada taro"></p>
+                <p>ログインしたままにする<input type="checkbox" checked></p>
+                <p>18歳以上ですか？<input type="radio" name="age" checked></p>
+                <p>18歳未満ですか？<input type="radio" name="age"></p>
+                <p>好きな果物はなんですか？
+                    <select>
+                        <option>バナナ</option>
+                        <option>リンゴ</option>
+                        <option selected>オレンジ</option>
+                    </select>
+                </p>
+
+                <p>パスワード:<input type="password" name="password"  placeholder="長さは正義" size="10"></p>
+
+                <p><input type="submit" value="ログインする"></p>
+            </form>
+        
+        <hr>
+
+        <h3>テーブル・表組み</h3>
+            MacBookの在庫一覧表
+            <table border>
+                <thead>
+                    <tr>
+                        <th>機種名</th>
+                        <th>在庫数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MacBook Pro 13インチ</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>MacBook Pro 15インチ</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>MacBook Air 13インチ</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>MacBook</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        <hr>
+
+        <h3>リンク</h3>
+            <p><a href="http://www.google.com">Google検索にジャンプする</a></p>
+            <p><a href="helloworld.html">Hello World!</a></p>
+            <p>
+                <a href="https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%82%B7%E3%83%B3%E3%83%97%E3%82%BD%E3%83%B3%E3%82%BA%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E3%82%B7%E3%83%B3%E3%83%97%E3%82%BD%E3%83%B3%E5%AE%B6%E3%81%A8%E3%81%9D%E3%81%AE%E8%A6%AA%E9%A1%9E"><img src="homer.png" ></a>
+            </p>
+            <p><a href="#top">トップに戻る:id属性を指定してリンクを貼っている</a></p>
+            <p><a href="#form">「フォーム」に戻る</a></p>
+        
+        <hr>
+
+        <h3>HTMLエンティティ（実体参照）</h3>
+            HTMLで自動的に修正されてしまう文字列などを、そのまま表示したい場合に使う。<br>
+            <p>&lt;a href="http://www.google.com"&gt;</p>
+            <p>&lt;a&gt;</p>
+            <p>&copy;</p>
+        
+        <hr>
+
+        <h3>インラインフレーム</h3>
+            <iframe src="http://entreschoolonline.com"></iframe>
+            <iframe src="myWebPage.html"></iframe>
+            <iframe src="homer.png"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0hYVEG5Abfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        
+        
+        
+        
+        
     </body>
 </html>
