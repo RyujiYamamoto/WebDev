@@ -13,7 +13,7 @@
             }
 
             .large-font-size {
-                font-size: 200%;
+                font-size: 100%;
             }
 
             .underlined {
@@ -22,13 +22,19 @@
             }
 
             .first-section {
-                background: #FFFFFF;
-                width: auto;
+                background: #EA4335;
+                width: 30%;
+                float: right;
             }
 
             .second-section {
                 background: #F9B010;
-                width: auto;
+                width: 30%;
+                float: left;
+            }
+
+            .clear-float {
+                clear: both;
             }
         </style>
     </head>
@@ -44,5 +50,9 @@
             <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
         </div>
 
+        <!--float属性を一度クリアしてから、以下の要素を配置する。
+        この操作をしないと、両方のfloat要素に挟まれた位置に表示されてしまう。-->
+        <div class="clear-float"></div>
+        <p>Third Paragraph</p>
     </body>
 </html>
