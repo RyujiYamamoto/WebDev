@@ -4,21 +4,28 @@
         <title>Webpage with style</title>
         <!--内部CSS：headタグ内にCSS情報を記載。全要素に適用される-->
         <style type="text/css">
-            h1 {
-                color: slateblue;
+            .blue {
+                color: blue;
             }
 
-            p {
-                color: black;
-                font-size: 100%;
+            #green {
+                color: green;
+            }
+
+            .large-font-size {
+                font-size: 200%;
+            }
+
+            .underlined {
+                text-decoration: underline;
+                text-decoration-style: double;
             }
         </style>
     </head>
     <body>
-        <h1>New Release Information!!</h1>
-        <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
-        <!--インラインCSSは、メンテナンスが非常に面倒。
-            画面要素とデザインを分離するため、CSSは別ファイルに定義スル方法が一般的。-->
-        <p>バーチャルリアリティが体験できるVRゴーグルを発売します→<a href="">Click Here</a></p>
+        <h1 class="blue">New Release Information!!</h1>
+        <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します→<a href="">Click Here</a></p>
+        <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
     </body>
 </html>
