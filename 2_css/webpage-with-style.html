@@ -36,9 +36,59 @@
             .clear-float {
                 clear: both;
             }
+
+            .third-section {
+                background: #EA4335;
+                width: 30%;
+                position: relative;
+                left: 0px;
+                top: 100px;
+                z-index: 2;
+                opacity: 0.8;
+            }
+
+            .fourth-section {
+                background: #F9B010;
+                width: 30%;
+                position: relative;
+                left: 200px;
+                top: 20px;
+                z-index: 1;
+            }
+
+            .fifth-section {
+                background: #EA4335;
+                width: 30%;
+                position: absolute;
+                height: 100px;
+                left: 300px;
+                top: 1100px;
+            }
+
+            .sixth-section {
+                background: #F9B010;
+                width: 30%;
+                position: relative;
+            }
+
+            .seventh-section {
+                background: #EA4335;
+                width: 30%;
+                position: relative;
+            }
+
+            .eighth-section {
+                background: #F9B010;
+                width: 30%;
+                position: fixed;
+                left: 300px;
+                top: 0px;
+                opacity: 0.5;
+            }
         </style>
     </head>
     <body>
+        <h3>float属性の確認</h3>
         <div class="first-section">
             <h1 class="blue">New Release Information!!</h1>
             <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
@@ -54,5 +104,46 @@
         この操作をしないと、両方のfloat要素に挟まれた位置に表示されてしまう。-->
         <div class="clear-float"></div>
         <p>Third Paragraph</p>
+
+        <hr>
+        <h3>position属性の確認(position:relative)</h3>
+
+        <div class="third-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="fourth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
+        <hr>
+        <h3>position属性の確認(position:absolute)</h3>
+
+        <div class="fifth-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="sixth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
+        <div class="eighth-section">
+            <h3>position属性の確認(position:fixed)</h3>
+            <p>position:fixedを指定</p>
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
     </body>
 </html>
