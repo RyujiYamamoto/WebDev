@@ -60,30 +60,44 @@
                 background: #EA4335;
                 width: 30%;
                 position: absolute;
-                height: 100px;
+                height: 250px;
                 left: 300px;
-                top: 1100px;
+                top: 850px;
             }
 
             .sixth-section {
                 background: #F9B010;
                 width: 30%;
                 position: relative;
+                height: 400px;
             }
 
             .seventh-section {
-                background: #EA4335;
-                width: 30%;
-                position: relative;
-            }
-
-            .eighth-section {
                 background: #F9B010;
                 width: 30%;
                 position: fixed;
                 left: 300px;
                 top: 0px;
                 opacity: 0.5;
+            }
+
+            .eighth-section {
+                background: #EA4335;
+                width: 30%;
+                margin: 50px 100px 20px;
+            }
+
+            .ninth-section {
+                background: #F9B010;
+                width: 30%;
+                margin-top: 20px;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                margin-left: 20px;
+            }
+
+            body {
+                background-color: darkcyan;
             }
         </style>
     </head>
@@ -125,6 +139,7 @@
         <h3>position属性の確認(position:absolute)</h3>
 
         <div class="fifth-section">
+            <h4>position:absoluteを指定</h4>
             <h1 class="blue">New Release Information!!</h1>
             <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
         </div>
@@ -137,13 +152,32 @@
 
         <p>Third Paragraph</p>
 
-        <div class="eighth-section">
+        <div class="seventh-section">
             <h3>position属性の確認(position:fixed)</h3>
             <p>position:fixedを指定</p>
             <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
                 <br>→<a href="">Click Here</a></p>
             <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
         </div>
+
+        <hr>
+        <h3>margin属性の確認</h3>
+        <!-- margin属性は、4方向の余白が作られる-->
+        <!-- margin (2数値指定→top/bottom right/left)-->
+        <!-- margin (3数値指定→top right/left bottom)-->
+        <div class="eighth-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="ninth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
 
     </body>
 </html>
