@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Webpage with style</title>
+        <!--外部CSS-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <!--内部CSS：headタグ内にCSS情報を記載。全要素に適用される-->
         <style type="text/css">
             .blue {
@@ -143,6 +145,10 @@
                 margin: 40px;
                 float: left;
             }
+
+            p {
+                font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", 'Source Sans Pro', sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -251,5 +257,14 @@
         <div id="square-red" class="square"></div>
         <div id="square-blue" class="square"></div>
         <div id="square-green" class="square"></div>
+
+        <div class="clear-float"></div>
+        <hr>
+        <h3>フォント制御</h3>
+        <!-- font-family (フォント指定)... (フォント分類名)-->
+
+        <p>ようこそ、プロダクト紹介へ！！</p>
+        <p>Here is a product infomation.</p>
+
     </body>
 </html>
