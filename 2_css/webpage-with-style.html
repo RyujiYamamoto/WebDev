@@ -96,8 +96,52 @@
                 margin-left: 20px;
             }
 
+            .tenth-section {
+                background: #EA4335;
+                width: 30%;
+                padding-top: 50px;
+                padding-right: 100px;
+                padding-bottom: 100px;
+                padding-left: 200px;
+            }
+
+            .eleventh-section {
+                background: #F9B010;
+                width: 30%;
+                padding: 30px;
+            }
+
+            #square-red {
+                background-color: red;
+                border-color: #34A853;
+                border-style: groove ridge dotted dashed;
+                border-width: 10px 5px 2px 1px;
+
+            }
+
+            #square-blue {
+                background-color: lightblue;
+                border: 5px black solid;
+            }
+
+            #square-green {
+                background-color: green;
+                border-radius: 50%;
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+
             body {
                 background-color: darkcyan;
+                margin: 0;
+                padding: 0;
+                margin: 40px;
+                float: left;
             }
         </style>
     </head>
@@ -162,7 +206,7 @@
 
         <hr>
         <h3>margin属性の確認</h3>
-        <!-- margin属性は、4方向の余白が作られる-->
+        <!-- margin属性単体だと、4方向の余白が作られる-->
         <!-- margin (2数値指定→top/bottom right/left)-->
         <!-- margin (3数値指定→top right/left bottom)-->
         <div class="eighth-section">
@@ -179,5 +223,33 @@
         <p>Third Paragraph</p>
 
 
+        <hr>
+        <h3>padding属性の確認</h3>
+        <!--width属性は、padding属性に無関係。
+            コンテンツの表示幅をwidth属性では指定する。-->
+        <!-- padding (2数値指定→top/bottom right/left)-->
+        <!-- padding (3数値指定→top right/left bottom)-->
+        <!--ブラウザごとにデフォルトのmargin/paddingが設定されている。
+            bodyタグのmargin/paddingを0に設定することでクリア可能。-->
+        <!-- ブラウザ差分は、reset.cssでクリアする方法あり。-->
+        <div class="tenth-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="eleventh-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <hr>
+        <h3>border属性の確認</h3>
+        <!-- border (太さ) (色) (属性)-->
+        <!-- border-radius: 50%;で円形となる-->
+
+        <div id="square-red" class="square"></div>
+        <div id="square-blue" class="square"></div>
+        <div id="square-green" class="square"></div>
     </body>
 </html>
