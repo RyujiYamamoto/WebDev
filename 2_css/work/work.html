@@ -2,8 +2,21 @@
 <html>
     <head>
         <title>Introduction to shinycolors</title>
-        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5e08b2e63a104dbea7692ae7ac1e0217" charset="utf-8"></script>
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Kosugi|Kosugi+Maru|M+PLUS+1p|M+PLUS+Rounded+1c|Noto+Sans+JP|Sawarabi+Gothic|Sawarabi+Mincho&display=swap" rel="stylesheet">
         <style type="text/css">
+            body {
+                font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", 'Source Sans Pro', sans-serif;
+                text-align: center;
+                background-color: #E6F8FF;
+                margin: 0;
+                padding: 0;
+                color: #5B5053;
+            }
+
+            hr {
+                margin: 0;
+            }
+
             ul {
                 list-style-type: none;
             }
@@ -30,20 +43,46 @@
 
             #title {
                 padding-top: 80px;
+                font-family: "Righteous", cursive;
             }
 
             .yell {
-                font-size: x-large;
+                font-size: larger;
             }
 
             .units {
-                margin: 0.40rem auto 0.60rem;
-                padding-bottom: 0.30rem;
+                margin: 0;
+            }
+
+            .unit-link {
+                margin-top: -80px;
+                padding-top: 80px;
+                display: hidden;
+            }
+
+            .units h2 {
+                font-family: "Righteous", cursive;
             }
 
             .unit-catch-copy {
-                font-size: x-large;
+                font-size: larger;
+                font-style: oblique;
+                opacity: 0.7;
+            }
 
+            .member figure {
+                display: inline-block;
+                text-align: center;
+                margin: 0.30rem 0.05rem 0;
+            }
+
+            .member figcaption {
+                font-family: 'M PLUS 1p', sans-serif;
+                font-size: larger;
+                font-weight: bold;
+                border-style: solid;
+                border-radius: 10px;
+                background-color: #FFFFFF;
             }
 
             #illuminationstars {
@@ -70,11 +109,11 @@
             }
 
             #illuminationstars .intro {
-                font-family: "UDTypos58";
+                font-family: 'Noto Sans JP', sans-serif;
             }
 
             .illuminationstars-color {
-                color: #00457C;
+                color: #ffa700;
             }
 
             #lantica {
@@ -100,11 +139,11 @@
             }
 
             #lantica .intro {
-                font-family: "Kan415Typos";
+                font-family: 'Sawarabi Mincho', sans-serif;
             }
 
             .lantica-color {
-                color: #59167B;
+                color: #853998;
             }
 
             #hokagoclimaxgirls {
@@ -130,11 +169,11 @@
             }
 
             #hokagoclimaxgirls .intro {
-                font-family: "Hiragino Maru Gothic W8 JIS2004";
+                font-family: 'Kosugi Maru', sans-serif;
             }
 
             .hokagoclimaxgirls-color {
-                color: #FD5538;
+                color: #fa8333;
             }
 
             #alstroemeria {
@@ -160,11 +199,11 @@
             }
 
             #alstroemeria .intro {
-                font-family: "CapieN DemiBold";
+                font-family: 'Kosugi Maru', sans-serif;
             }
 
             .alstroemeria-color {
-                color: #E94F94;
+                color: #e43b80;
             }
 
             #straylight {
@@ -190,161 +229,287 @@
             }
 
             #straylight .intro {
-                font-family: "Take Medium";
+                font-family: 'Sawarabi Gothic', sans-serif;
             }
 
             .straylight-color {
-                color: #B6494C;
+                color: #e71212;
             }
 
-            body {
-                font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", 'Source Sans Pro', sans-serif;
-                text-align: center;
-                background-color: #E6F8FF;
-                margin: 0;
-                padding: 0;
-                color: #5B5053;
+            .hiori-bg {
+                border-color: #144384;
+            }
+
+            .mano-bg {
+                border-color: #FFBAD6;
+            }
+
+            .meguru-bg {
+                border-color: #FFE012;
+            }
+
+            .kiriko-bg {
+                border-color: #D9F2FF;
+            }
+
+            .kogane-bg {
+                border-color: #F84CAD;
+            }
+
+            .yuika-bg {
+                border-color: #3B91C4;
+            }
+
+            .mamimi-bg {
+                border-color: #A846FB;
+            }
+
+            .sakuya-bg {
+                border-color: #006047;
+            }
+
+            .chiyoko-bg {
+                border-color: #F93B90;
+            }
+
+            .kaho-bg {
+                border-color: #E5461C;
+            }
+
+            .juri-bg {
+                border-color: #FFC602;
+            }
+
+            .rinze-bg {
+                border-color: #89C3EB;
+            }
+
+            .natsuha-bg {
+                border-color: #90E667;
+            }
+
+            .amana-bg {
+                border-color: #F54275;
+            }
+
+            .chiyuki-bg {
+                border-color: #FBFAFA;
+            }
+
+            .tenka-bg {
+                border-color: #E75BEC;
+            }
+
+            .fuyuko-bg {
+                border-color: #5CE626;
+            }
+
+            .asahi-bg {
+                border-color: #F30100;
+            }
+
+            .mei-bg {
+                border-color: #FF00FF;
             }
         </style>
     </head>
     <body class="center">
         <div id="nav">
             <dl id="nav-menu">
-                <li><a href="#illuminationstars"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_illuminationstars_h.png" alt="イルミネーションスターズ メニューロゴ"></a></li>
-                <li><a href="#lantica"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_lantica_h.png" alt="アンティーカ ユニットロゴ"></a></li>
-                <li><a href="#hokagoclimaxgirls"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_hokagoclimaxgirls_h.png" alt="放課後クライマックスガールズ ユニットロゴ"></a></li>
-                <li><a href="#alstroemeria"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_alstroemeria_h.png" alt="アルストロメリア ユニットロゴ"></a></li>
-                <li><a href="#straylight"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_straylight_h.png" alt="ストレイライト ユニットロゴ"></a></li>
+                <li><a href="#illuminationstars-link"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_illuminationstars_h.png" alt="イルミネーションスターズ メニューロゴ"></a></li>
+                <li><a href="#lantica-link"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_lantica_h.png" alt="アンティーカ ユニットロゴ"></a></li>
+                <li><a href="#hokagoclimaxgirls-link"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_hokagoclimaxgirls_h.png" alt="放課後クライマックスガールズ ユニットロゴ"></a></li>
+                <li><a href="#alstroemeria-link"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_alstroemeria_h.png" alt="アルストロメリア ユニットロゴ"></a></li>
+                <li><a href="#straylight-link"><img src="https://shinycolors.idolmaster.jp/pc/static/img/common/menu_straylight_h.png" alt="ストレイライト ユニットロゴ"></a></li>
             </dl>
+            <hr>
         </div>
         <h2 id="title">Idolm@ster Shinycolors<br>Units Introduction</h2>
 
-        <section class="units">
-            <div id="illuminationstars">
-                <hr>
-                <div class="intro">
-                    <h2>イルミネーションスターズ</h2>
-                    <p class="unit-catch-copy">瞳に輝く、<strong>無限</strong>の可能性</p>
-                </div>
-                <p class="yell illuminationstars-color">「――輝きをみんなに届けようっ！<br><strong>イルミネーションスターズ</strong>！！」</p>
-                <div class="member">
-                    <h2>Member</h2>
-                    <dl>
-                        <li>風野 灯織<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_hiori.png" alt="風野 灯織 アイコン"></li>
-                        <li>櫻木 真乃<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_mano.png" alt="櫻木 真乃 アイコン"></li>
-                        <li>八宮 めぐる<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_meguru.png" alt="八宮 めぐる アイコン"></li>
-                    </dl>
-                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/illuminationstars/ttl_unit.png" alt="イルミネーションスターズ ユニットロゴ">
-                </div>
-                <div class="songs">
-                    <h2>Songs</h2>
-                    <iframe class="song" src="https://www.youtube.com/embed/o2Q6UbN5dfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="song" src="https://www.youtube.com/embed/Ela9WiovqgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <hr>
+        <section id="illuminationstars" class="units">
+            <hr>
+            <div id="illuminationstars-link" class="unit-link"></div>
+            <img src="https://shinycolors.idolmaster.jp/pc/static/img/illuminationstars/ttl_unit.png" alt="イルミネーションスターズ ユニットロゴ">
+            <div class="intro">
+                <h1>イルミネーションスターズ</h1>
+                <p>
+                    <span class="unit-catch-copy">瞳に輝く、<strong>無限</strong>の可能性</span><br>
+                    <span class="yell illuminationstars-color">「――輝きをみんなに届けようっ！<strong>イルミネーションスターズ</strong>！！」</span>
+                </p>
             </div>
-
-            <div id="lantica">
-                <hr>
-                <div class="intro">
-                    <h2>アンティーカ</h2>
-                    <p class="unit-catch-copy">回せ、錆びついた<strong>運命</strong>の鍵を</p>
-                </div>
-                <p class="yell lantica-color">「――うちらが宇宙一ばーい！<br><strong>アンティーカ</strong>――！！」</pclass="yell">
-                    <div class="member">
-                        <h2>Member</h2>
-                        <dl>
-                            <li>幽谷 霧子<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_kiriko.png" alt="幽谷 霧子 アイコン"></li>
-                            <li>月岡 恋鐘<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_kogane.png" alt="月岡 恋鐘 アイコン"></li>
-                            <li>三峰 結華<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_yuika.png" alt="三峰 結華 アイコン"></li>
-                            <br>
-                            <li>田中 摩美々<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_mamimi.png" alt="田中 摩美々 アイコン"></li>
-                            <li>白瀬 咲耶<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_sakuya.png" alt="白瀬 咲耶 アイコン"></li>
-                        </dl>
-                        <img src="https://shinycolors.idolmaster.jp/pc/static/img/lantica/ttl_unit.png" alt="アンティーカ ユニットロゴ">>
-                    </div>
-                    <div class="songs">
-                        <h2>Songs</h2>
-                        <iframe class="song" src="https://www.youtube.com/embed/LI7d7cHjD6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe class="song" src="https://www.youtube.com/embed/7ojxsf2uLKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <hr>
+            <div class="member">
+                <h2>Member</h2>
+                <figure>
+                    <figcaption class="hiori-bg">風野 灯織</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_hiori.png" alt="風野 灯織 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="mano-bg">櫻木 真乃</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_mano.png" alt="櫻木 真乃 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="meguru-bg">八宮 めぐる</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_illuminationstars_meguru.png" alt="八宮 めぐる アイコン">
+                </figure>
+                <br>
             </div>
-
-            <div id="hokagoclimaxgirls">
-                <hr>
-                <div class="intro">
-                    <h2>放課後クライマックスガールズ</h2>
-                    <p class="unit-catch-copy">女の子はいつだって放課後が<strong>クライマックス！</strong></p>
-                </div>
-                <p class="yell hokagoclimaxgirls-color">「<strong>放課後クライマックスガールズ</strong>――！<br>最強のアイドルに！ 変 身 ！ ！」</p>
-                <div class="member">
-                    <h2>Member</h2>
-                    <dl>
-                        <li>園田 智代子<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_chiyoko.png" alt="園田 智代子 アイコン"></li>
-                        <li>小宮 果穂<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_kaho.png" alt="小宮 果穂 アイコン"></li>
-                        <li>西城 樹里<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_juri.png" alt="西城 樹里 アイコン"></li>
-                        <br>
-                        <li>杜野 凛世<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_rinze.png" alt="杜野 凛世 アイコン"></li>
-                        <li>有栖川 夏葉<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_natsuha.png" alt="有栖川 夏葉 アイコン"></li>
-                    </dl>
-                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/hokagoclimaxgirls/ttl_unit.png" alt="放課後クライマックスガールズ ユニットロゴ">>
-                </div>
-                <div class="songs">
-                    <h2>Songs</h2>
-                    <iframe class="song" src="https://www.youtube.com/embed/lw5WSonuhHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="song" src="https://www.youtube.com/embed/JZn6pH65YNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <hr>
-            </div>
-
-            <div id="alstroemeria">
-                <hr>
-                <div class="intro">
-                    <h2>アルストロメリア</h2>
-                    <p class="unit-catch-copy"><strong>花</strong>ざかり、私達の幸福論</p>
-                </div>
-                <p class="yell alstroemeria-color">「――今日も！ ……元気に……！ 笑顔の花を咲かせよう――<br>……<strong>アルストロメリア</strong>――！」</p>
-                <div class="member">
-                    <h2>Member</h2>
-                    <dl>
-                        <li>大崎 甘奈<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_amana.png" alt="大崎 甘奈 アイコン"></li>
-                        <li>桑山 千雪<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_chiyuki.png" alt="桑山 千雪 アイコン"></li>
-                        <li>大崎 甜花<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_tenka.png" alt="大崎 甜花 アイコン"></li>
-                    </dl>
-                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/alstroemeria/ttl_unit.png" alt="アルストロメリア ユニットロゴ">>
-                </div>
-                <div class="songs">
-                    <h2>Songs</h2>
-
-                    <iframe class="song" src="https://www.youtube.com/embed/TdHC8gPi1yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="song" src="https://www.youtube.com/embed/ngXAvshESs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <hr>
-            </div>
-
-            <div id="straylight">
-                <hr>
-                <div class="intro">
-                    <h2>ストレイライト</h2>
-                    <p class="unit-catch-copy">身に纏うは<strong>迷光</strong>、少女たちは偶像となる</p>
-                </div>
-                <p class="yell straylight-color">「…………わたしは負けない…… わたしたちは、誰にも負けない……<br>――……わたしたちは……<strong>ストレイライト</strong>――！」</p>
-                <div class="member">
-                    <h2>Member</h2>
-                    <dl>
-                        <li>黛 冬優子<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_fuyuko.png" alt="黛 冬優子 アイコン"></li>
-                        <li>芹沢 あさひ<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_asahi.png" alt="芹沢 あさひ アイコン"></li>
-                        <li>和泉 愛衣<br><img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_mei.png" alt="和泉 愛衣 アイコン"></li>
-                    </dl>
-                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/straylight/ttl_unit.png" alt="ストレイライト ユニットロゴ">>
-                </div>
-                <div class="songs">
-                    <h2>Songs</h2>
-                    <iframe class="song" src="https://www.youtube.com/embed/T3yivwygYjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <hr>
+            <div class="songs">
+                <h2>Songs</h2>
+                <iframe class="song" src="https://www.youtube.com/embed/o2Q6UbN5dfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="song" src="https://www.youtube.com/embed/Ela9WiovqgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
+        <section id="lantica" class="units">
+            <hr>
+            <div id="lantica-link" class="unit-link"></div>
+            <img src="https://shinycolors.idolmaster.jp/pc/static/img/lantica/ttl_unit.png" alt="アンティーカ ユニットロゴ">
+            <div class="intro">
+                <h1>アンティーカ </h1>
+                <p>
+                    <span class="unit-catch-copy">回せ、錆びついた<strong>運命</strong>の鍵を</span><br>
+                    <span class="yell lantica-color">「――うちらが宇宙一ばーい！<strong>アンティーカ</strong>――！！」</span>
+                </p>
+            </div>
+            <div class="member">
+                <h2>Member</h2>
+                <figure>
+                    <figcaption class="kiriko-bg">幽谷 霧子</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_kiriko.png" alt="幽谷 霧子 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="kogane-bg">月岡 恋鐘</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_kogane.png" alt="月岡 恋鐘 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="yuika-bg">三峰 結華</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_yuika.png" alt="三峰 結華 アイコン">
+                </figure>
+                <br>
+                <figure>
+                    <figcaption class="mamimi-bg">田中 摩美々</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_mamimi.png" alt="田中 摩美々 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="sakuya-bg">白瀬 咲耶</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_lantica_sakuya.png" alt="白瀬 咲耶 アイコン">
+                </figure>
+                <br>
+            </div>
+            <div class="songs">
+                <h2>Songs</h2>
+                <iframe class="song" src="https://www.youtube.com/embed/LI7d7cHjD6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="song" src="https://www.youtube.com/embed/7ojxsf2uLKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="hokagoclimaxgirls" class="units">
+            <hr>
+            <div id="hokagoclimaxgirls-link" class="unit-link"></div>
+            <img src="https://shinycolors.idolmaster.jp/pc/static/img/hokagoclimaxgirls/ttl_unit.png" alt="放課後クライマックスガールズ ユニットロゴ">
+            <div class="intro">
+                <h1>放課後クライマックスガールズ </h1>
+                <p>
+                    <span class="unit-catch-copy">女の子はいつだって放課後が<strong>クライマックス！</strong></span><br>
+                    <span class="yell hokagoclimaxgirls-color">「<strong>放課後クライマックスガールズ</strong>――！最強のアイドルに！ 変 身 ！ ！」</span>
+                </p>
+            </div>
+            <div class="member">
+                <h2>Member</h2>
+                <figure>
+                    <figcaption class="chiyoko-bg">園田 智代子</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_chiyoko.png" alt="園田 智代子 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="kaho-bg">小宮 果穂</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_kaho.png" alt="小宮 果穂 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="juri-bg">西城 樹里</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_juri.png" alt="西城 樹里 アイコン">
+                </figure>
+                <br>
+                <figure>
+                    <figcaption class="rinze-bg">杜野 凛世</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_rinze.png" alt="杜野 凛世 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="natsuha-bg">有栖川 夏葉</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_hokagoclimaxgirls_natsuha.png" alt="有栖川 夏葉 アイコン">
+                </figure>
+                <br>
+            </div>
+            <div class="songs">
+                <h2>Songs</h2>
+                <iframe class="song" src="https://www.youtube.com/embed/lw5WSonuhHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="song" src="https://www.youtube.com/embed/JZn6pH65YNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="alstroemeria" class="units">
+            <hr>
+            <div id="alstroemeria-link" class="unit-link"></div>
+            <img src="https://shinycolors.idolmaster.jp/pc/static/img/alstroemeria/ttl_unit.png" alt="アルストロメリア ユニットロゴ">
+            <div class="intro">
+                <h1>アルストロメリア</h1>
+                <p>
+                    <span class="unit-catch-copy"><strong>花</strong>ざかり、私達の幸福論</span><br>
+                    <span class="yell alstroemeria-color">「――今日も！ ……元気に……！ 笑顔の花を咲かせよう――<br>……<strong>アルストロメリア</strong>――！」</span>
+                </p>
+            </div>
+            <div class="member">
+                <h2>Member</h2>
+                <figure>
+                    <figcaption class="amana-bg">大崎 甘奈</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_amana.png" alt="大崎 甘奈 アイコン"></li>
+                </figure>
+                <figure>
+                    <figcaption class="chiyuki-bg">桑山 千雪</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_chiyuki.png" alt="桑山 千雪 アイコン"></li>
+                </figure>
+                <figure>
+                    <figcaption class="tenka-bg">大崎 甜花</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_alstroemeria_tenka.png" alt="大崎 甜花 アイコン">
+                </figure>
+                <br>
+            </div>
+            <div class="songs">
+                <h2>Songs</h2>
+
+                <iframe class="song" src="https://www.youtube.com/embed/TdHC8gPi1yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="song" src="https://www.youtube.com/embed/ngXAvshESs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="straylight" class="units">
+            <hr>
+            <div id="straylight-link" class="unit-link"></div>
+            <img src="https://shinycolors.idolmaster.jp/pc/static/img/straylight/ttl_unit.png" alt="ストレイライト ユニットロゴ">
+            <div class="intro">
+                <h1>ストレイライト</h1>
+                <p>
+                    <span class="unit-catch-copy">身に纏うは<strong>迷光</strong>、少女たちは偶像となる</span><br>
+                    <span class="yell straylight-color">「…………わたしは負けない…… わたしたちは、誰にも負けない……<br>――……わたしたちは……<strong>ストレイライト</strong>――！」</span>
+                </p>
+            </div>
+            <div class="member">
+                <h2>Member</h2>
+                <figure>
+                    <figcaption class="fuyuko-bg">黛 冬優子</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_fuyuko.png" alt="黛 冬優子 アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="asahi-bg">芹沢 あさひ</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_asahi.png" alt="芹沢 あさひ アイコン">
+                </figure>
+                <figure>
+                    <figcaption class="mei-bg">和泉 愛衣</figcaption>
+                    <img src="https://shinycolors.idolmaster.jp/pc/static/img/download/thumb_straylight_mei.png" alt="和泉 愛衣 アイコン">
+                </figure>
+                <br>
+            </div>
+            <div class="songs">
+                <h2>Songs</h2>
+                <iframe class="song" src="https://www.youtube.com/embed/T3yivwygYjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section id="straylight">
     </body>
 </html>
