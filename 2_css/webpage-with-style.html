@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage with style</title>
+        <!--外部CSS-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!--内部CSS：headタグ内にCSS情報を記載。全要素に適用される-->
+        <style type="text/css">
+            .blue {
+                color: #4285F4;
+            }
+
+            #green {
+                color: #34A853;
+            }
+
+            .large-font-size {
+                font-size: 100%;
+            }
+
+            .underlined {
+                text-decoration: underline;
+                text-decoration-style: double;
+            }
+
+            .first-section {
+                background: #EA4335;
+                width: 30%;
+                float: right;
+            }
+
+            .second-section {
+                background: #F9B010;
+                width: 30%;
+                float: left;
+            }
+
+            .clear-float {
+                clear: both;
+            }
+
+            .third-section {
+                background: #EA4335;
+                width: 30%;
+                position: relative;
+                left: 0px;
+                top: 100px;
+                z-index: 2;
+                opacity: 0.8;
+            }
+
+            .fourth-section {
+                background: #F9B010;
+                width: 30%;
+                position: relative;
+                left: 200px;
+                top: 20px;
+                z-index: 1;
+            }
+
+            .fifth-section {
+                background: #EA4335;
+                width: 30%;
+                position: absolute;
+                height: 250px;
+                left: 300px;
+                top: 850px;
+            }
+
+            .sixth-section {
+                background: #F9B010;
+                width: 30%;
+                position: relative;
+                height: 400px;
+            }
+
+            .seventh-section {
+                background: #F9B010;
+                width: 30%;
+                position: fixed;
+                left: 300px;
+                top: 0px;
+                opacity: 0.5;
+            }
+
+            .eighth-section {
+                background: #EA4335;
+                width: 30%;
+                margin: 50px 100px 20px;
+            }
+
+            .ninth-section {
+                background: #F9B010;
+                width: 30%;
+                margin-top: 20px;
+                margin-right: 50px;
+                margin-bottom: 50px;
+                margin-left: 20px;
+            }
+
+            .tenth-section {
+                background: #EA4335;
+                width: 30%;
+                padding-top: 50px;
+                padding-right: 100px;
+                padding-bottom: 100px;
+                padding-left: 200px;
+            }
+
+            .eleventh-section {
+                background: #F9B010;
+                width: 30%;
+                padding: 30px;
+            }
+
+            #square-red {
+                background-color: red;
+                border-color: #34A853;
+                border-style: groove ridge dotted dashed;
+                border-width: 10px 5px 2px 1px;
+            }
+
+            #square-blue {
+                background-color: lightblue;
+                border: 5px black solid;
+            }
+
+            #square-green {
+                background-color: green;
+                border-radius: 50%;
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+
+            body {
+                background-color: darkcyan;
+                margin: 0;
+                padding: 0;
+                margin: 40px;
+                float: left;
+            }
+
+            p {
+                font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", 'Source Sans Pro', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>float属性の確認</h3>
+        <div class="first-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="second-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <!--float属性を一度クリアしてから、以下の要素を配置する。
+        この操作をしないと、両方のfloat要素に挟まれた位置に表示されてしまう。-->
+        <div class="clear-float"></div>
+        <p>Third Paragraph</p>
+
+        <hr>
+        <h3>position属性の確認(position:relative)</h3>
+
+        <div class="third-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="fourth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
+        <hr>
+        <h3>position属性の確認(position:absolute)</h3>
+
+        <div class="fifth-section">
+            <h4>position:absoluteを指定</h4>
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="sixth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
+        <div class="seventh-section">
+            <h3>position属性の確認(position:fixed)</h3>
+            <p>position:fixedを指定</p>
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <hr>
+        <h3>margin属性の確認</h3>
+        <!-- margin属性単体だと、4方向の余白が作られる-->
+        <!-- margin (2数値指定→top/bottom right/left)-->
+        <!-- margin (3数値指定→top right/left bottom)-->
+        <div class="eighth-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="ninth-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <p>Third Paragraph</p>
+
+
+        <hr>
+        <h3>padding属性の確認</h3>
+        <!--width属性は、padding属性に無関係。
+            コンテンツの表示幅をwidth属性では指定する。-->
+        <!-- padding (2数値指定→top/bottom right/left)-->
+        <!-- padding (3数値指定→top right/left bottom)-->
+        <!--ブラウザごとにデフォルトのmargin/paddingが設定されている。
+            bodyタグのmargin/paddingを0に設定することでクリア可能。-->
+        <!-- ブラウザ差分は、reset.cssでクリアする方法あり。-->
+        <div class="tenth-section">
+            <h1 class="blue">New Release Information!!</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="eleventh-section">
+            <p class="large-font-size">バーチャルリアリティが体験できるVRゴーグルを発売します
+                <br>→<a href="">Click Here</a></p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</a></p>
+        </div>
+
+        <hr>
+        <h3>border属性の確認</h3>
+        <!-- border (太さ) (色) (属性)-->
+        <!-- border-radius: 50%;で円形となる-->
+
+        <div id="square-red" class="square"></div>
+        <div id="square-blue" class="square"></div>
+        <div id="square-green" class="square"></div>
+
+        <div class="clear-float"></div>
+        <hr>
+        <h3>フォント制御</h3>
+        <!-- font-family (フォント指定)... (フォント分類名)-->
+
+        <p>ようこそ、プロダクト紹介へ！！</p>
+        <p>Here is a product infomation.</p>
+
+    </body>
+</html>
