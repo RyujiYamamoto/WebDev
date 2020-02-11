@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <div id="tweetsDiv"></div>
+
+        <script type="text/JavaScript">
+
+            var tweets=["morning", "Good Day", "Dinner!", "Good Night...", "Nice Dream................."];
+            var tweetsString ="";
+
+            var i=0;
+            while(i < tweets.length){
+                // alert(tweets[i]);
+                tweetsString += "<p>" + tweets[i] + "</p>";
+                i++;
+            }
+            document.getElementById("tweetsDiv").innerHTML = tweetsString;
+        </script>
+    </body>
+</html>
