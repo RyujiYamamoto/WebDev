@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <p id="text">Hello World!</p>
+        <button id="myButton">Change Text!</button>
+        <script type="text/JavaScript">
+            document.getElementById("myButton").onclick = function(){
+                //alert("ボタンがクリックされました！");
+                document.getElementById("text").innerHTML = "Changed..."
+            }
+        </script>
+    </body>
+</html>
