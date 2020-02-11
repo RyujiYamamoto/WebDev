@@ -9,17 +9,26 @@
         <script type="text/JavaScript">
             document.getElementById("myButton").onclick = function(){
                 //alert("ボタンがクリックされました！");
-                document.getElementById("text").innerHTML = "Changed..."
+                document.getElementById("text").innerHTML = "Changed...";
             }
         </script>
 
         <p id="secondParagraph">JavaScriptは、</p>
         <button id="secondButton">追記する！</button>
+
+        <p id="thirdParagraph">スタイルを変更してみましょう</p>
+        <button id="changeStyle">スタイルを変更する！</button>
+
         <script type="text/JavaScript">
             document.getElementById("secondButton").onclick =function(){
                 //追記→文字列結合
                 document.getElementById("secondParagraph").innerHTML +=
                 "ブラウザでもサーバサイドでも動作するプログラミング言語です";
+            }
+
+            document.getElementById("changeStyle").onclick = function(){
+                //document.getElementById("thirdParagraph").style.color = "red";
+                document.getElementById("thirdParagraph").style.display = "none";
             }
         </script>
     </body>
