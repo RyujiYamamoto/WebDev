@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <p>秘密の暗号を入れてください</p>
+        <p><input type="text" id="magicWord"></p>
+        <p><button id="checkMagicWord">暗号チェック</button></p>
+
+        <script type="text/JavaScript">
+            /*
+            //IF文の例
+            var x = 2;
+
+            if(x == 1){
+                alert("xは1です。");
+            } else {
+                alert("xは1ではありません")
+            }
+            */
+
+            document.getElementById("checkMagicWord").onclick = function(){
+                var magicWordEntered = document.getElementById("magicWord").value;
+                var magicWord = "abracadabra";
+
+                if(magicWordEntered == magicWord){
+                    alert("OK！");
+                } else {
+                    alert("正しい暗号を入れてください。");
+                }
+            }
+
+        </script>
+    </body>
+</html>
