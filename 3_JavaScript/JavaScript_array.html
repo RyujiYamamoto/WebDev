@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+
+
+        <script type="text/JavaScript">
+            /*
+            var myArray = new Array();
+            myArray[0] = "pizza";
+            myArray[1] = "chocolate";
+
+            alert(myArray[1]);
+            alert(myArray.length);
+            console.log(myArray);
+            */
+
+            var tweets = ["おはよう","ランチタイムです","そろそろ仕事終わりです"]
+            //alert(tweets[1]);
+            tweets.push("仕事が完了しました。帰りたい。");
+
+            //index1から1個削除し、挿入する
+            tweets.splice(1,1,"本日のランチはパスタ。");
+            console.log(tweets);
+            //index1から0個削除し、挿入する
+            tweets.splice(1,0,"腹が空きました。");
+            console.log(tweets);
+        </script>
+    </body>
+</html>

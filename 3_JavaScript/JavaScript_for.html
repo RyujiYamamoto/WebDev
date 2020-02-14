@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <div id="tweetsDiv">
+        </div>
+
+        <script type="text/JavaScript">
+            // for(var i=5; i>0; i--){
+            //     alert(i);
+            // }
+
+            var tweets=["morning", "Good Day", "Dinner!", "Good Night...", "Nice Dream................."];
+            var tweetsString ="";
+
+            for(var i=0; i<tweets.length; i++){
+                // alert(tweets[i]);
+                tweetsString += "<p>" + tweets[i] + "</p>";
+            }
+            document.getElementById("tweetsDiv").innerHTML = tweetsString;
+        </script>
+    </body>
+</html>
